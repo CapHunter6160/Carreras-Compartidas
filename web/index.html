@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bienvenido</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0F0F12;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .phone-wrapper {
+            width: 100%;
+            max-width: 412px;
+            height: 100vh;
+            max-height: 840px;
+            background: #16161A;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .brand-section {
+            text-align: center;
+            margin-top: 80px;
+        }
+        .logo-container {
+            width: 100px;
+            height: 100px;
+            background: #F2C94C;
+            margin: 0 auto 24px auto;
+            border-radius: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 20px rgba(242, 201, 76, 0.3);
+        }
+        .logo-container svg {
+            width: 55px;
+            height: 55px;
+            fill: #16161A;
+        }
+        h1 {
+            color: #FFFFFF;
+            font-size: 32px;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        p {
+            color: #8E8E93;
+            font-size: 16px;
+            margin: 0;
+        }
+        .action-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-primary {
+            background-color: #F2C94C;
+            color: #16161A;
+        }
+        .btn-primary:hover {
+            background-color: #E0BA43;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #FFFFFF;
+            border: 2px solid #3A3A42;
+        }
+        .btn-secondary:hover {
+            background-color: rgba(255,255,255,0.05);
+            border-color: #F2C94C;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="phone-wrapper">
+        <div class="brand-section">
+            <div class="logo-container">
+                <svg viewBox="0 0 24 24">
+                    <path d="M18.92 11.01C18.72 10.42 18.16 10 17.5 10H6.5c-.66 0-1.21.42-1.42 1.01L3 17v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 22c-.83 0-1.5-.67-1.5-1.5S5.67 19 6.5 19s1.5.67 1.5 1.5S7.33 22 6.5 22zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 17l1.5-4.5h11L19 17H5z"/>
+                </svg>
+            </div>
+            <h1>Bienvenido</h1>
+            <p>Muévete de forma rápida y segura</p>
+        </div>
+
+        <div class="action-container">
+            <a href="CrearCuenta.jsp" class="btn btn-primary">Crea una cuenta</a>
+            <a href="Login.jsp" class="btn btn-secondary">Inicia sesión</a>
+        </div>
+    </div>
+
+</body>
+</html>
